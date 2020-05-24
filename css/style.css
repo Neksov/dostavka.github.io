@@ -372,9 +372,8 @@ input {
   .btn:hover {
     -webkit-box-shadow: none;
     box-shadow: none;
-    color: #6ece0f;
-    background-color: #ffffff;
-    border: 1px solid #6ece0f; }
+    color: #ffffff;
+    background-color: #ffb547; }
   .btn:active, .btn:focus {
     outline: none; }
 
@@ -473,7 +472,8 @@ input.invalid {
     margin-top: -4rem; }
   .find__hero-btn {
     padding: 1.3rem 3.3rem;
-    font-size: 25px; }
+    font-size: 25px;
+    margin-left: 5px; }
 
 .sheet {
   position: absolute;
@@ -481,8 +481,16 @@ input.invalid {
   right: 2.4rem;
   z-index: 5; }
 
+.search__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
 .restaurants__hero {
-  background: url(../img/restaurant__fone.jpg) no-repeat center/cover;
+  background: url(../img/fone.jpg) no-repeat center/cover;
   height: 1399px;
   margin-top: -4rem;
   display: -webkit-box;
@@ -500,7 +508,8 @@ input.invalid {
   justify-content: center;
   padding-bottom: 8rem;
   padding-right: 18rem;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .restaurants__info {
   padding-right: 13rem;
@@ -518,12 +527,6 @@ input.invalid {
   padding: 1.3rem 3.3rem;
   font-size: 25px;
   margin-top: 2.1rem; }
-  .restaurants-btn:hover {
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    color: #6ece0f;
-    background-color: #ffffff;
-    border: 1px solid #6ece0f; }
 
 .egg {
   position: absolute;
@@ -546,20 +549,119 @@ input.invalid {
   left: 21.1rem;
   top: 25.8rem; }
 
-.place {
+.place__hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: -5.9rem;
+  margin-left: -4.6rem;
+  overflow: hidden;
+  position: relative; }
+
+.place__food {
+  margin-top: 10rem;
+  z-index: 999; }
+
+.place__title {
+  width: 568px;
+  color: #303030;
+  font-size: 50px;
+  font-weight: 700;
+  margin-right: 27.7rem;
+  margin-top: -4rem;
+  line-height: 71px; }
+
+.place__line1 {
+  position: absolute;
+  left: 61.1rem;
+  bottom: 18.2rem; }
+
+.place__line2 {
+  position: absolute;
+  left: 61.1rem;
+  bottom: 19.5rem; }
+
+.mushroom {
+  position: absolute;
+  right: 33.4rem;
+  top: 7rem; }
+
+.food1 {
+  position: absolute;
+  top: 24rem;
+  right: 0rem; }
+
+.thanks__fone {
+  background: url(../img/fone.jpg) no-repeat center/cover;
+  height: 1399px;
+  margin-top: -17rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
-  .place__food {
-    margin-top: 10rem; }
-  .place__title {
-    width: 568px;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 10; }
+  .thanks__fone-title {
+    width: 625px;
     color: #303030;
     font-size: 50px;
-    font-weight: 700; }
+    font-weight: 700;
+    margin-right: 14.7rem;
+    margin-top: -4rem;
+    line-height: 71px;
+    margin-top: -10.5rem;
+    line-height: 70px; }
+
+.phone2 {
+  margin-top: -5.5rem;
+  margin-right: 18rem;
+  z-index: 10; }
+
+.line3 {
+  position: absolute;
+  top: 23.4rem; }
+
+.sandwich {
+  position: absolute;
+  left: 20rem;
+  top: 54rem;
+  z-index: 2; }
+
+.sandwich2 {
+  position: absolute;
+  left: 19.7rem;
+  top: 53.5rem;
+  z-index: 0; }
+
+.dumplings {
+  position: absolute;
+  top: 59.3rem;
+  left: 35.6rem;
+  z-index: 2; }
+
+.dumplings2 {
+  position: absolute;
+  top: 58.8rem;
+  left: 35.2rem;
+  z-index: 0; }
+
+.spice {
+  position: absolute;
+  top: 14.5rem;
+  left: 41rem; }
