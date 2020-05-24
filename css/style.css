@@ -468,6 +468,8 @@ input.invalid {
     width: 660px;
     letter-spacing: 0.7px;
     padding-bottom: 3rem; }
+  .find__hero-burger {
+    z-index: 1; }
   .find__hero-info {
     margin-top: -4rem; }
   .find__hero-btn {
@@ -559,8 +561,8 @@ input.invalid {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-top: -5.9rem;
-  margin-left: -4.6rem;
+  margin-top: -11.9rem;
+  margin-left: -6.6rem;
   overflow: hidden;
   position: relative; }
 
@@ -573,7 +575,7 @@ input.invalid {
   color: #303030;
   font-size: 50px;
   font-weight: 700;
-  margin-right: 27.7rem;
+  margin-right: 29.7rem;
   margin-top: -4rem;
   line-height: 71px; }
 
@@ -589,7 +591,7 @@ input.invalid {
 
 .mushroom {
   position: absolute;
-  right: 33.4rem;
+  right: 35.7rem;
   top: 7rem; }
 
 .food1 {
@@ -665,3 +667,108 @@ input.invalid {
   position: absolute;
   top: 14.5rem;
   left: 41rem; }
+
+.get__hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 4rem; }
+
+.attachment {
+  position: relative; }
+  .attachment__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-right: 19.6rem;
+    margin-top: -12.4rem; }
+    .attachment__info-text {
+      font-size: 40px;
+      font-weight: 700;
+      width: 394px;
+      line-height: 52px;
+      padding-left: 2rem; }
+  .attachment__line1 {
+    position: absolute;
+    top: 0rem;
+    left: 49rem; }
+  .attachment__line2 {
+    position: absolute;
+    top: 1rem;
+    left: 49rem; }
+  .attachment__sheet {
+    position: absolute;
+    top: -11rem;
+    right: 8rem;
+    z-index: 12; }
+  .attachment__pasta {
+    position: absolute;
+    bottom: 4rem;
+    right: 40rem;
+    z-index: 2; }
+  .attachment__pasta2 {
+    position: absolute;
+    bottom: 1.7rem;
+    right: 37.7rem;
+    z-index: 0; }
+  .attachment__grass {
+    position: absolute;
+    bottom: 5.7rem;
+    right: -0.3rem; }
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.story {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 4rem;
+  cursor: pointer; }
+  .story__google {
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out; }
+    .story__google:hover {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1); }
+  .story__apple {
+    padding-left: 1rem;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out; }
+    .story__apple:hover {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1); }
