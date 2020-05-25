@@ -773,11 +773,18 @@ input.invalid {
       -webkit-transform: scale(1.1);
       transform: scale(1.1); }
 
+.uber {
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; }
+  .uber:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+
 .service__hero {
   background: url(../img/service.jpg) no-repeat center/cover;
   height: 743px;
   position: relative;
-  top: 0.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -790,7 +797,10 @@ input.invalid {
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  overflow: hidden; }
 
 .information__restaurant {
   display: -webkit-box;
@@ -803,18 +813,35 @@ input.invalid {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: end;
-  margin-right: 12rem; }
+  margin-right: 12rem;
+  margin-top: 12rem;
+  position: relative; }
   .information__restaurant-title {
     color: #5fb709;
     font-size: 35px;
-    font-weight: 700; }
+    font-weight: 700;
+    margin-top: 1.5rem;
+    letter-spacing: 0.4px;
+    margin-bottom: 1rem; }
   .information__restaurant-text {
-    width: 420px;
+    width: 409px;
     color: #303030;
     font-size: 20px;
     font-weight: 400;
     line-height: 34px;
     letter-spacing: -0.4px; }
+  .information__restaurant-btn {
+    margin-top: 2rem;
+    padding: 1.2rem 3.1rem; }
+  .information__restaurant::after {
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 401px;
+    background-color: #262626;
+    opacity: 0.1;
+    right: -6rem;
+    top: -23px; }
 
 .information__eat {
   display: -webkit-box;
@@ -826,15 +853,22 @@ input.invalid {
   flex-direction: column;
   -webkit-box-align: end;
   -ms-flex-align: end;
-  align-items: end; }
+  align-items: end;
+  margin-top: 11.5rem; }
   .information__eat-title {
     color: #5fb709;
     font-size: 35px;
-    font-weight: 700; }
+    font-weight: 700;
+    margin-top: 1.9rem;
+    letter-spacing: 0.4px; }
   .information__eat-text {
-    width: 420px;
+    width: 409px;
     color: #303030;
     font-size: 20px;
     font-weight: 400;
     line-height: 34px;
-    letter-spacing: -0.4px; }
+    letter-spacing: -0.4px;
+    margin-top: 1rem; }
+  .information__eat-btn {
+    margin-top: 2rem;
+    padding: 1.2rem 3.1rem; }
