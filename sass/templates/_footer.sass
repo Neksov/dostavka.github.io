@@ -61,6 +61,8 @@
   justify-content: space-between
   img
     width: 20px
+    transition: all .3s ease-in-out
+    
 .production
   margin-top: 11rem
   &__text
@@ -79,6 +81,24 @@
       line-height: 51px
       letter-spacing: 0.4px
       text-decoration: none
+      position: relative
+      transition: all .3s ease-in-out
+      &::after //нижнее подчеркивание
+        position: absolute
+        content: ""
+        display: block
+        height: 3px
+        border-radius: 2px
+        background-color: #6ece0f
+        width: 0%
+        left: 50%
+        transition: width .3s ease-in-out
+        transform: translateX(-50%)
+      &:hover
+        color: #6ece0f
+        opacity: 0.7
+        &:after
+          width: 100%
 .menu
   list-style: none
   &-item
@@ -89,6 +109,24 @@
       line-height: 51px
       letter-spacing: 0.4px
       text-decoration: none
+      transition: all .3s ease-in-out
+      position: relative
+      &::after //нижнее подчеркивание
+        position: absolute
+        content: ""
+        display: block
+        height: 3px
+        border-radius: 2px
+        background-color: #6ece0f
+        width: 0%
+        left: 50%
+        transition: width .3s ease-in-out
+        transform: translateX(-50%)
+      &:hover
+        color: #6ece0f
+        opacity: 0.7
+        &:after
+          width: 100%
 .blog
   list-style: none
   &-item
@@ -99,6 +137,24 @@
       line-height: 51px
       letter-spacing: 0.4px
       text-decoration: none
+      transition: all .3s ease-in-out
+      position: relative
+      &::after //нижнее подчеркивание
+        position: absolute
+        content: ""
+        display: block
+        height: 3px
+        border-radius: 2px
+        background-color: #6ece0f
+        width: 0%
+        left: 50%
+        transition: width .3s ease-in-out
+        transform: translateX(-50%)
+      &:hover
+        color: #6ece0f
+        opacity: 0.7
+        &:after
+          width: 100%
 .download
   color: #ffffff
   font-size: 20px
@@ -111,5 +167,13 @@
     align-items: center
     flex-direction: row
     margin-top: 1.5rem
+    cursor: pointer
+    &-google
+      transition: all .3s ease-in-out
+      &:hover
+        transform: scale(1.2)
     &-apple
       margin-left: 1rem
+      transition: all .3s ease-in-out
+      &:hover
+        transform: scale(1.2)

@@ -19,7 +19,7 @@
       <div class="header__fone">
         <div class="fone ">
           <img src="img/fruit.png" alt="fruit" class="fone-fruit">
-          <button class="btn btn--green fone-btn ">Sign up</button>
+          <button class="btn btn--green fone-btn " data-toggle="logIn">Sign up</button>
         </div>
         <div class="info">
           <div class="info__title">
@@ -166,7 +166,7 @@
       </div>
     </section>
   </main>
-  <foote class="footer">
+  <footer class="footer">
     <div class="container">
       <div class="paragraph footer__hero">
         <div class="paragraph__group">
@@ -213,21 +213,86 @@
           <div class="paragraph__group-load">
             <span class="download">Download Uber Eates App From :</span>
             <div class="load__images">
-              <img src="img/footer-google.png" alt="google">
-              <img src="img/footer-apple.png" alt="apple" class="load__images-apple">
+              <a href="#"><img src="img/footer-google.png" alt="google" class="load__images-google"></a>
+              <a href="#"><img src="img/footer-apple.png" alt="apple" class="load__images-apple"></a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </foote>
+  </footer>
+  <!-- Модальне окно LogIn-->
+  <div class="logIn">
+    <div class="logIn__dialog">
+      <button class="logIn__close"></button>
+      <h3 class="logIn__title">
+        Login
+      </h3>
+      <h4 class="logIn__lemon">Login for DELIVERY</h4>
+      <form action="logIn.php" method="POST" class="form logIn__form">
+        <div class="input-group logIn__input-group">
+          <input type="text" name="userName" class="input form__input logIn__input" id="logIn-user-name"
+            placeholder="email or login" maxlength="30" />
+        </div>
+        <div class="input-group logIn__input-group">
+          <input type="password" name="userPassword" class="input form__input logIn__input" id="logIn-user-password"
+            placeholder="password" maxlength="30" />
+          <img src="img/eye-solid.svg" alt="sea password" class="sea" />
+        </div>
+        <button class="btn btn--light logIn__btn">
+          LOGIN
+        </button>
+      </form>
+      <div class="logIn__accaunt" data-toggle="signIn">
+        Don’t have an accont? Sign in
+      </div>
+    </div>
+  </div>
+  <!-- Модальне окно SignIn-->
+  <div class="signIn">
+    <div class="signIn__dialog">
+      <button class="signIn__close"></button>
+      <h3 class="signIn__title">
+        Sign in
+      </h3>
+      <h4 class="signIn__lemon">Sign in for DELIVERY</h4>
+      <form action="signIn.php" method="POST" class="form signIn__form">
+        <div class="input-group signIn__input-group">
+          <input type="text" name="userName" class="input form__input signIn__input" id="signIn-user-name"
+            placeholder="user name" maxlength="30" />
+        </div>
+        <div class="input-group signIn__input-group">
+          <input type="email" autocomplete="off" name="userEmail" class="input form__input signIn__input"
+            id="signIn-user-email" placeholder="e-mail" maxlength="30" />
+        </div>
+        <div class="input-group signIn__input-group">
+          <input type="text" name="userPassword" class="input form__input signIn__input" id="signIn-user-password"
+            placeholder="password" maxlength="30" />
+        </div>
+        <div class="input-group signIn__input-group">
+          <input type="text" name="userPassword2" class="input form__input signIn__input" id="signIn-user-password2"
+            placeholder="reapet password" maxlength="30" />
+        </div>
+        <button class="btn btn--light signIn__btn">
+          SIGN UP
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="buttonUp">
+    <span id="button-up">
+      <img src="img/angle-double-up-solid.svg" alt="Наверх" />
+    </span>
+  </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-  <script src="https://5e7c8b12452c471f8d34e456--reverent-yonath-cad9c2.netlify.com/js/jquery.validate.min.js"></script>
-  <script src="https://5e7c8b12452c471f8d34e456--reverent-yonath-cad9c2.netlify.com/js/jquery.mask.min.js"></script>
-  <script src="https://5e7c8b12452c471f8d34e456--reverent-yonath-cad9c2.netlify.com/js/wow.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/buttonUp.min.js"></script>
 </body>
 
 </html>

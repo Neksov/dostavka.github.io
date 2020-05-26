@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -344,6 +345,58 @@ input {
   color: #585858;
   font-size: 16px;
   font-weight: 400; }
+
+.form__input {
+  outline: none;
+  border: none;
+  border: 1px solid #c2c2c2;
+  background-color: #ffffff;
+  font-size: 12px;
+  font-weight: 300;
+  width: 265px;
+  height: 40px;
+  text-align: left;
+  margin-bottom: 20px;
+  padding-left: 18px;
+  cursor: pointer; }
+  .form__input:hover {
+    -webkit-box-shadow: inset 1px 2px 7px rgba(11, 12, 12, 0.37);
+    box-shadow: inset 1px 2px 7px rgba(11, 12, 12, 0.37); }
+  .form__input::-webkit-input-placeholder {
+    opacity: 0.2;
+    color: #38393b;
+    font-family: "Josefin Sans";
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px; }
+  .form__input::-moz-placeholder {
+    opacity: 0.2;
+    color: #38393b;
+    font-family: "Josefin Sans";
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px; }
+  .form__input:-ms-input-placeholder {
+    opacity: 0.2;
+    color: #38393b;
+    font-family: "Josefin Sans";
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px; }
+  .form__input::-ms-input-placeholder {
+    opacity: 0.2;
+    color: #38393b;
+    font-family: "Josefin Sans";
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px; }
+  .form__input::placeholder {
+    opacity: 0.2;
+    color: #38393b;
+    font-family: "Josefin Sans";
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px; }
 
 .container {
   width: 100%;
@@ -957,7 +1010,9 @@ input.invalid {
   -ms-flex-pack: justify;
   justify-content: space-between; }
   .social img {
-    width: 20px; }
+    width: 20px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; }
 
 .production {
   margin-top: 11rem; }
@@ -976,7 +1031,28 @@ input.invalid {
     font-weight: 300;
     line-height: 51px;
     letter-spacing: 0.4px;
-    text-decoration: none; }
+    text-decoration: none;
+    position: relative;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; }
+    .partner-item a::after {
+      position: absolute;
+      content: "";
+      display: block;
+      height: 3px;
+      border-radius: 2px;
+      background-color: #6ece0f;
+      width: 0%;
+      left: 50%;
+      -webkit-transition: width .3s ease-in-out;
+      transition: width .3s ease-in-out;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%); }
+    .partner-item a:hover {
+      color: #6ece0f;
+      opacity: 0.7; }
+      .partner-item a:hover:after {
+        width: 100%; }
 
 .menu {
   list-style: none; }
@@ -986,7 +1062,28 @@ input.invalid {
     font-weight: 300;
     line-height: 51px;
     letter-spacing: 0.4px;
-    text-decoration: none; }
+    text-decoration: none;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    position: relative; }
+    .menu-item a::after {
+      position: absolute;
+      content: "";
+      display: block;
+      height: 3px;
+      border-radius: 2px;
+      background-color: #6ece0f;
+      width: 0%;
+      left: 50%;
+      -webkit-transition: width .3s ease-in-out;
+      transition: width .3s ease-in-out;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%); }
+    .menu-item a:hover {
+      color: #6ece0f;
+      opacity: 0.7; }
+      .menu-item a:hover:after {
+        width: 100%; }
 
 .blog {
   list-style: none; }
@@ -996,7 +1093,28 @@ input.invalid {
     font-weight: 300;
     line-height: 51px;
     letter-spacing: 0.4px;
-    text-decoration: none; }
+    text-decoration: none;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    position: relative; }
+    .blog-item a::after {
+      position: absolute;
+      content: "";
+      display: block;
+      height: 3px;
+      border-radius: 2px;
+      background-color: #6ece0f;
+      width: 0%;
+      left: 50%;
+      -webkit-transition: width .3s ease-in-out;
+      transition: width .3s ease-in-out;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%); }
+    .blog-item a:hover {
+      color: #6ece0f;
+      opacity: 0.7; }
+      .blog-item a:hover:after {
+        width: 100%; }
 
 .download {
   color: #ffffff;
@@ -1016,9 +1134,291 @@ input.invalid {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-top: 1.5rem; }
+  margin-top: 1.5rem;
+  cursor: pointer; }
+  .load__images-google {
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; }
+    .load__images-google:hover {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2); }
   .load__images-apple {
-    margin-left: 1rem; }
+    margin-left: 1rem;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; }
+    .load__images-apple:hover {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2); }
+
+.logIn {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 199;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba(56, 57, 59, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: auto; }
+  .logIn--visible {
+    opacity: 1;
+    visibility: visible; }
+  .logIn__dialog {
+    position: relative;
+    width: 328px;
+    height: 356px;
+    -webkit-box-shadow: 0 0 13px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 13px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    padding-top: 0px;
+    padding-left: 31px;
+    padding-right: 32px; }
+  .logIn__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    background: transparent url(../img/close.svg) no-repeat center;
+    border: none;
+    margin: 12px;
+    cursor: pointer;
+    outline: none; }
+  .logIn__title {
+    color: #38393b;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.5px; }
+    .logIn__title::after {
+      position: absolute;
+      display: block;
+      content: '';
+      width: 271px;
+      height: 2px;
+      background-color: #555555;
+      opacity: 0.2;
+      top: 46px; }
+  .logIn__lemon {
+    color: #38393b;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    margin-top: 35px; }
+  .logIn__btn {
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 155px;
+    height: 35px;
+    padding-top: 9px;
+    letter-spacing: 2px; }
+  .logIn__label {
+    margin-right: 28px;
+    cursor: pointer; }
+  .logIn__accaunt {
+    position: relative;
+    opacity: 0.54;
+    color: #38393b;
+    font-family: "Josefin Sans";
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.8px;
+    text-align: center;
+    padding-top: 12px;
+    cursor: pointer; }
+    .logIn__accaunt::after {
+      position: absolute;
+      content: "";
+      display: block;
+      height: 1px;
+      border-radius: 2px;
+      background-color: #6ece0f;
+      width: 0%;
+      left: 50%;
+      -webkit-transition: width .3s ease-in-out;
+      transition: width .3s ease-in-out;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%); }
+    .logIn__accaunt:hover:after {
+      width: 80%; }
+
+#checkBoxModal-error {
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 15px;
+  color: #ff5a3c;
+  opacity: 1; }
+
+#logIn-user-password-error {
+  position: absolute;
+  display: block;
+  margin-top: -17px;
+  color: #ff5a3c; }
+
+#logIn-user-name-error {
+  position: absolute;
+  display: block;
+  margin-top: -17px;
+  color: #ff5a3c; }
+
+.sea {
+  width: 20px;
+  position: absolute;
+  right: 40px;
+  bottom: 150px;
+  cursor: pointer;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out; }
+  .sea:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); }
+
+.signIn {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 199;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba(56, 57, 59, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: auto; }
+  .signIn--visible {
+    opacity: 1;
+    visibility: visible; }
+  .signIn__dialog {
+    position: relative;
+    width: 328px;
+    min-height: 335px;
+    -webkit-box-shadow: 0 0 13px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 13px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    padding-top: 0px;
+    padding-left: 31px;
+    padding-right: 32px;
+    padding-bottom: 31px; }
+  .signIn__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    background: transparent url(../img/close.svg) no-repeat center;
+    border: none;
+    margin: 12px;
+    cursor: pointer;
+    outline: none; }
+  .signIn__title {
+    color: #38393b;
+    font-family: "Josefin Sans";
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.5px; }
+    .signIn__title::after {
+      position: absolute;
+      display: block;
+      content: '';
+      width: 271px;
+      height: 2px;
+      background-color: #555555;
+      opacity: 0.2;
+      top: 46px; }
+  .signIn__lemon {
+    color: #38393b;
+    font-family: "Josefin Sans";
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    margin-top: 35px; }
+  .signIn__btn {
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 155px;
+    height: 35px;
+    padding-top: 9px;
+    letter-spacing: 2px; }
+  .signIn__checkbox {
+    width: 11px;
+    height: 10px;
+    margin-right: 3px;
+    cursor: pointer; }
+  .signIn__label {
+    margin-right: 28px;
+    cursor: pointer; }
+  .signIn__policy {
+    display: inline-block;
+    opacity: 0.54;
+    color: #38393b;
+    font-family: "Josefin Sans";
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    cursor: pointer; }
+
+#signIn-user-password-error {
+  position: absolute;
+  display: block;
+  margin-top: -17px;
+  color: #ff5a3c; }
+
+#signIn-user-password2-error {
+  position: absolute;
+  display: block;
+  margin-top: -17px;
+  color: #ff5a3c; }
+
+#signIn-user-name-error {
+  position: absolute;
+  display: block;
+  margin-top: -17px;
+  color: #ff5a3c; }
+
+#signIn-user-email-error {
+  position: absolute;
+  display: block;
+  margin-top: -17px;
+  color: #ff5a3c; }
+
+#button-up {
+  display: none;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  color: #000;
+  -webkit-transition: .5s;
+  transition: .5s;
+  font-size: 15px;
+  z-index: 50; }
+  #button-up img {
+    width: 50px;
+    height: 50px; }
+  #button-up:hover {
+    cursor: pointer; }
 
 @media screen and (min-width: 1600px) and (max-width: 1920px) {
   .info {
@@ -1286,7 +1686,7 @@ input.invalid {
   .paragraph__group-partner {
     margin-left: 0rem; }
   .paragraph__group-menu {
-    margin-left: 1rem;
+    margin-left: пг1rem;
     margin-top: 7rem; }
   .paragraph__group-blog {
     margin-top: 1rem;
@@ -1296,3 +1696,719 @@ input.invalid {
     margin-top: -2.1rem; }
   .footer__hero {
     height: 500px; } }
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .info {
+    margin-left: -5rem; }
+    .info-sliced {
+      left: 21.7rem;
+      bottom: -13rem;
+      width: 30%; }
+    .info-layer {
+      width: 15%;
+      left: 26.3rem;
+      bottom: -7rem; }
+    .info__title {
+      font-size: 40px;
+      line-height: 50px; }
+  .fone-fruit {
+    width: 90%; }
+  .fone-btn {
+    margin-right: -5rem; }
+  .find__hero-burger {
+    width: 35%;
+    margin-left: 7rem;
+    margin-right: 3rem; }
+  .find__hero-title {
+    width: 450px;
+    font-size: 40px;
+    line-height: 50px; }
+  input {
+    width: 298px; }
+  .sheet {
+    right: 11.4rem; }
+  .restaurants__hero {
+    height: 900px; }
+  .restaurants__info {
+    padding-right: 4rem;
+    padding-left: 6rem; }
+  .restaurants__title {
+    width: 350px;
+    font-size: 40px;
+    line-height: 50px; }
+  .phone {
+    width: 30%; }
+  .egg {
+    right: 3.7rem;
+    width: 22%;
+    top: 5.4rem; }
+  .cucumber {
+    width: 63%; }
+  .line1 {
+    left: 16.1rem;
+    top: 14.5rem; }
+  .line2 {
+    left: 16.1rem;
+    top: 15.5rem; }
+  .place__title {
+    margin-right: 13rem;
+    font-size: 40px;
+    line-height: 50px; }
+  .place__line1 {
+    left: 38rem; }
+  .place__line2 {
+    left: 38rem; }
+  .place__food {
+    width: 50%;
+    margin-top: 9rem; }
+  .food1 {
+    right: 1rem; }
+  .mushroom {
+    width: 10%;
+    right: 25.7rem;
+    top: 10rem; }
+  .thanks__fone {
+    height: 1200px; }
+    .thanks__fone-title {
+      margin-right: 3.7rem;
+      width: 439px;
+      font-size: 40px;
+      line-height: 50px; }
+  .phone2 {
+    width: 25%;
+    margin-right: 4rem; }
+  .sandwich {
+    width: 17%;
+    left: 11rem;
+    top: 46rem; }
+  .sandwich2 {
+    width: 17%;
+    left: 11.7rem;
+    top: 46.5rem; }
+  .dumplings {
+    width: 15%;
+    top: 54.3rem;
+    left: 26.6rem; }
+  .dumplings2 {
+    width: 15%;
+    top: 54.3rem;
+    left: 26.6rem; }
+  .spice {
+    left: 19rem;
+    width: 20%; }
+  .line3 {
+    width: 100%;
+    margin-top: 2rem; }
+  .attachment__info {
+    margin-left: 2rem;
+    margin-right: 8rem; }
+    .attachment__info-text {
+      width: 400px; }
+  .attachment__pasta {
+    right: 20rem;
+    bottom: 2rem; }
+  .attachment__pasta2 {
+    right: 17.7rem;
+    bottom: -0.4rem; }
+  .attachment__sheet {
+    width: 17%;
+    right: 2rem; }
+  .attachment__line2 {
+    top: -3rem;
+    left: 28rem; }
+  .attachment__line1 {
+    top: -4rem;
+    left: 28rem; }
+  .vegetables {
+    width: 40%;
+    margin-left: 7rem; }
+  .uber {
+    width: 20%; }
+  .story__google {
+    width: 100%; }
+  .story__apple {
+    width: 100%; }
+  .information__restaurant {
+    margin-right: 2rem; }
+    .information__restaurant::after {
+      right: 0rem; }
+  .paragraph__group {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .paragraph__group-social {
+      padding-top: 0rem;
+      margin-left: 30px; }
+    .paragraph__group-partner {
+      margin-left: 2rem;
+      margin-top: -1rem; }
+    .paragraph__group-menu {
+      margin-left: 2rem;
+      margin-top: 5.5rem; }
+    .paragraph__group-blog {
+      margin-top: -1rem;
+      margin-left: 2rem; }
+    .paragraph__group-load {
+      margin-left: 30px;
+      margin-top: 0rem; }
+  .production {
+    margin-top: 1rem; }
+  .footer__hero {
+    height: 500px;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: end; }
+    .footer__hero::after {
+      top: 50px; } }
+
+@media screen and (min-width: 992px) and (max-width: 1023px) {
+  .info {
+    margin-left: -5rem; }
+    .info-sliced {
+      left: 21.7rem;
+      bottom: -13rem;
+      width: 30%; }
+    .info-layer {
+      width: 15%;
+      left: 26.3rem;
+      bottom: -7rem; }
+    .info__title {
+      font-size: 40px;
+      line-height: 50px; }
+  .fone-fruit {
+    width: 90%; }
+  .fone-btn {
+    margin-right: -5rem; }
+  .find__hero-burger {
+    width: 35%;
+    margin-left: 7rem;
+    margin-right: 3rem; }
+  .find__hero-title {
+    width: 450px;
+    font-size: 40px;
+    line-height: 50px; }
+  .find__hero-btn {
+    padding: 1.3rem 2.3rem; }
+  input {
+    width: 298px; }
+  .sheet {
+    right: 11.4rem; }
+  .restaurants__hero {
+    height: 900px; }
+  .restaurants__info {
+    padding-right: 4rem;
+    padding-left: 6rem; }
+  .restaurants__title {
+    width: 350px;
+    font-size: 40px;
+    line-height: 50px; }
+  .phone {
+    width: 30%; }
+  .egg {
+    right: 3.7rem;
+    width: 22%;
+    top: 5.4rem; }
+  .cucumber {
+    width: 63%; }
+  .line1 {
+    left: 16.1rem;
+    top: 14.5rem; }
+  .line2 {
+    left: 16.1rem;
+    top: 15.5rem; }
+  .place__title {
+    margin-right: 13rem;
+    font-size: 40px;
+    line-height: 50px; }
+  .place__line1 {
+    left: 38rem; }
+  .place__line2 {
+    left: 38rem; }
+  .place__food {
+    width: 50%;
+    margin-top: 9rem; }
+  .food1 {
+    right: 1rem; }
+  .mushroom {
+    width: 10%;
+    right: 25.7rem;
+    top: 10rem; }
+  .thanks__fone {
+    height: 1200px; }
+    .thanks__fone-title {
+      margin-right: 3.7rem;
+      width: 439px;
+      font-size: 40px;
+      line-height: 50px; }
+  .phone2 {
+    width: 25%;
+    margin-right: 4rem; }
+  .sandwich {
+    width: 17%;
+    left: 11rem;
+    top: 46rem; }
+  .sandwich2 {
+    width: 17%;
+    left: 11.7rem;
+    top: 46.5rem; }
+  .dumplings {
+    width: 15%;
+    top: 54.3rem;
+    left: 26.6rem; }
+  .dumplings2 {
+    width: 15%;
+    top: 54.3rem;
+    left: 26.6rem; }
+  .spice {
+    left: 19rem;
+    width: 20%; }
+  .line3 {
+    width: 100%;
+    margin-top: 2rem; }
+  .attachment__info {
+    margin-left: 2rem;
+    margin-right: 8rem; }
+    .attachment__info-text {
+      width: 400px; }
+  .attachment__pasta {
+    right: 20rem;
+    bottom: 2rem; }
+  .attachment__pasta2 {
+    right: 17.7rem;
+    bottom: -0.4rem; }
+  .attachment__sheet {
+    width: 17%;
+    right: 2rem; }
+  .attachment__line2 {
+    top: -3rem;
+    left: 28rem; }
+  .attachment__line1 {
+    top: -4rem;
+    left: 28rem; }
+  .vegetables {
+    width: 40%;
+    margin-left: 7rem; }
+  .uber {
+    width: 20%; }
+  .story__google {
+    width: 100%; }
+  .story__apple {
+    width: 100%; }
+  .information__restaurant {
+    margin-right: 2rem; }
+    .information__restaurant::after {
+      right: 0rem; }
+  .paragraph__group {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .paragraph__group-social {
+      padding-top: 0rem;
+      margin-left: 30px; }
+    .paragraph__group-partner {
+      margin-left: 2rem;
+      margin-top: -1rem; }
+    .paragraph__group-menu {
+      margin-left: 2rem;
+      margin-top: 5.5rem; }
+    .paragraph__group-blog {
+      margin-top: -1rem;
+      margin-left: 2rem; }
+    .paragraph__group-load {
+      margin-left: 30px;
+      margin-top: 0rem; }
+  .production {
+    margin-top: 1rem; }
+  .footer__hero {
+    height: 500px;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: end; }
+    .footer__hero::after {
+      top: 50px; } }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .info {
+    margin-left: -7rem; }
+    .info-sliced {
+      left: 21.7rem;
+      bottom: -13rem;
+      width: 30%; }
+    .info-layer {
+      width: 15%;
+      left: 26.3rem;
+      bottom: -7rem; }
+    .info__title {
+      font-size: 30px;
+      width: 300px;
+      line-height: 50px; }
+  .fone-fruit {
+    width: 90%; }
+  .fone-btn {
+    margin-right: -5rem; }
+  .find__hero-burger {
+    width: 35%;
+    margin-left: 7rem;
+    margin-right: 3rem; }
+  .find__hero-title {
+    width: 350px;
+    font-size: 30px;
+    line-height: 50px; }
+  .find__hero-btn {
+    padding: 1rem 2.3rem;
+    margin-top: 10px; }
+  input {
+    width: 298px; }
+  .sheet {
+    right: 11.4rem;
+    top: -10.5rem; }
+  .search__group {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    z-index: 30; }
+  .restaurants__hero {
+    height: 900px;
+    z-index: -1; }
+  .restaurants-btn {
+    padding: 1rem 2.3rem; }
+  .restaurants__info {
+    padding-right: 2rem;
+    padding-left: 9rem; }
+  .restaurants__title {
+    width: 350px;
+    font-size: 30px;
+    line-height: 50px; }
+  .cucumber {
+    left: -3.6rem; }
+  .phone {
+    width: 30%; }
+  .egg {
+    right: 3.7rem;
+    width: 22%;
+    top: 5.4rem; }
+  .cucumber {
+    width: 63%; }
+  .line1 {
+    left: 16.1rem;
+    top: 14.5rem; }
+  .line2 {
+    left: 16.1rem;
+    top: 15.5rem; }
+  .place__title {
+    margin-right: 3rem;
+    width: 350px;
+    font-size: 30px;
+    line-height: 50px; }
+  .place__line1 {
+    left: 30rem; }
+  .place__line2 {
+    left: 30rem;
+    bottom: 17.5rem; }
+  .place__food {
+    width: 50%;
+    margin-top: 9rem; }
+  .food1 {
+    right: 1rem;
+    width: 14%; }
+  .mushroom {
+    width: 10%;
+    right: 14rem;
+    top: 8rem; }
+  .thanks__fone {
+    height: 800px;
+    z-index: -1; }
+    .thanks__fone-title {
+      margin-right: 1rem;
+      width: 300px;
+      font-size: 30px;
+      line-height: 50px; }
+  .phone2 {
+    width: 25%;
+    margin-right: 4rem; }
+  .sandwich {
+    width: 17%;
+    left: 11rem;
+    top: 30rem; }
+  .sandwich2 {
+    width: 17%;
+    left: 11.7rem;
+    top: 30.5rem; }
+  .dumplings {
+    width: 15%;
+    top: 33.3rem;
+    left: 20.6rem; }
+  .dumplings2 {
+    width: 15%;
+    top: 33.3rem;
+    left: 20.6rem; }
+  .spice {
+    left: 17rem;
+    top: 7rem;
+    width: 20%; }
+  .line3 {
+    width: 100%;
+    margin-top: -6rem; }
+  .story {
+    margin-top: 0; }
+  .attachment__info {
+    margin-left: 2rem;
+    margin-right: 8rem;
+    margin-top: -4rem; }
+    .attachment__info-text {
+      width: 400px; }
+  .attachment__pasta {
+    right: 20rem;
+    bottom: -4rem;
+    z-index: 31; }
+  .attachment__pasta2 {
+    right: 17.7rem;
+    bottom: -6.4rem;
+    z-index: 30; }
+  .attachment__sheet {
+    width: 17%;
+    right: 2rem; }
+  .attachment__line2 {
+    top: -3rem;
+    left: 28rem; }
+  .attachment__line1 {
+    top: -4rem;
+    left: 28rem; }
+  .attachment__grass {
+    bottom: -3.3rem;
+    z-index: 1; }
+  .vegetables {
+    width: 40%;
+    margin-left: 7rem; }
+  .uber {
+    width: 20%; }
+  .story__google {
+    width: 100%; }
+  .story__apple {
+    width: 100%; }
+  .service__hero {
+    height: 1000px; }
+  .information__eat {
+    margin-top: -3.5rem; }
+  .information__restaurant {
+    margin-right: 2rem; }
+    .information__restaurant::after {
+      display: none; }
+  .paragraph__group {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .paragraph__group-social {
+      padding-top: 0rem;
+      margin-left: 30px; }
+    .paragraph__group-partner {
+      margin-left: 2rem;
+      margin-top: -1rem; }
+    .paragraph__group-menu {
+      margin-left: 2rem;
+      margin-top: 5.5rem; }
+    .paragraph__group-blog {
+      margin-top: -1rem;
+      margin-left: -10px; }
+    .paragraph__group-load {
+      margin-left: 4rem;
+      margin-top: -3rem; }
+  .production {
+    margin-top: 1rem; }
+  .footer__hero {
+    height: 600px;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: end; }
+    .footer__hero::after {
+      top: 50px; } }
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .info {
+    margin-left: -7rem; }
+    .info-sliced {
+      left: 21.7rem;
+      bottom: -13rem;
+      width: 30%; }
+    .info-layer {
+      width: 15%;
+      left: 26.3rem;
+      bottom: -7rem; }
+    .info__title {
+      font-size: 30px;
+      width: 300px;
+      line-height: 50px; }
+  .fone-fruit {
+    width: 90%; }
+  .fone-btn {
+    margin-right: -5rem; }
+  .find__hero-burger {
+    width: 35%;
+    margin-left: 7rem;
+    margin-right: 3rem; }
+  .find__hero-title {
+    width: 350px;
+    font-size: 30px;
+    line-height: 50px; }
+  .find__hero-btn {
+    padding: 1rem 2.3rem;
+    margin-top: 10px; }
+  input {
+    width: 298px; }
+  .sheet {
+    right: 11.4rem;
+    top: -10.5rem; }
+  .search__group {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    z-index: 30; }
+  .restaurants__hero {
+    height: 900px;
+    z-index: -1; }
+  .restaurants-btn {
+    padding: 1rem 2.3rem; }
+  .restaurants__info {
+    padding-right: 2rem;
+    padding-left: 9rem; }
+  .restaurants__title {
+    width: 350px;
+    font-size: 30px;
+    line-height: 50px; }
+  .cucumber {
+    left: -3.6rem; }
+  .phone {
+    width: 30%; }
+  .egg {
+    right: 3.7rem;
+    width: 22%;
+    top: 5.4rem; }
+  .cucumber {
+    width: 63%; }
+  .line1 {
+    left: 16.1rem;
+    top: 14.5rem; }
+  .line2 {
+    left: 16.1rem;
+    top: 15.5rem; }
+  .place__title {
+    margin-right: 3rem;
+    width: 350px;
+    font-size: 30px;
+    line-height: 50px; }
+  .place__line1 {
+    left: 30rem; }
+  .place__line2 {
+    left: 30rem;
+    bottom: 17.5rem; }
+  .place__food {
+    width: 50%;
+    margin-top: 9rem; }
+  .food1 {
+    right: 1rem;
+    width: 14%; }
+  .mushroom {
+    width: 10%;
+    right: 14rem;
+    top: 8rem; }
+  .thanks__fone {
+    height: 800px;
+    z-index: -1; }
+    .thanks__fone-title {
+      margin-right: 1rem;
+      width: 300px;
+      font-size: 30px;
+      line-height: 50px; }
+  .phone2 {
+    width: 25%;
+    margin-right: 4rem; }
+  .sandwich {
+    width: 17%;
+    left: 11rem;
+    top: 30rem; }
+  .sandwich2 {
+    width: 17%;
+    left: 11.7rem;
+    top: 30.5rem; }
+  .dumplings {
+    width: 15%;
+    top: 33.3rem;
+    left: 20.6rem; }
+  .dumplings2 {
+    width: 15%;
+    top: 33.3rem;
+    left: 20.6rem; }
+  .spice {
+    left: 17rem;
+    top: 7rem;
+    width: 20%; }
+  .line3 {
+    width: 100%;
+    margin-top: -6rem; }
+  .story {
+    margin-top: 0; }
+  .attachment__info {
+    margin-left: 2rem;
+    margin-right: 8rem;
+    margin-top: -4rem; }
+    .attachment__info-text {
+      width: 400px; }
+  .attachment__pasta {
+    right: 20rem;
+    bottom: -4rem;
+    z-index: 31; }
+  .attachment__pasta2 {
+    right: 17.7rem;
+    bottom: -6.4rem;
+    z-index: 30; }
+  .attachment__sheet {
+    width: 17%;
+    right: 2rem; }
+  .attachment__line2 {
+    top: -3rem;
+    left: 28rem; }
+  .attachment__line1 {
+    top: -4rem;
+    left: 28rem; }
+  .attachment__grass {
+    bottom: -3.3rem;
+    z-index: 1; }
+  .vegetables {
+    width: 40%;
+    margin-left: 7rem; }
+  .uber {
+    width: 20%; }
+  .story__google {
+    width: 100%; }
+  .story__apple {
+    width: 100%; }
+  .service__hero {
+    height: 1000px; }
+  .information__eat {
+    margin-top: -3.5rem; }
+  .information__restaurant {
+    margin-right: 2rem; }
+    .information__restaurant::after {
+      display: none; }
+  .paragraph__group {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .paragraph__group-social {
+      padding-top: 0rem;
+      margin-left: 30px; }
+    .paragraph__group-partner {
+      margin-left: 2rem;
+      margin-top: -1rem; }
+    .paragraph__group-menu {
+      margin-left: 2rem;
+      margin-top: 5.5rem; }
+    .paragraph__group-blog {
+      margin-top: -1rem;
+      margin-left: -10px; }
+    .paragraph__group-load {
+      margin-left: 4rem;
+      margin-top: -3rem; }
+  .production {
+    margin-top: 1rem; }
+  .footer__hero {
+    height: 600px;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: end; }
+    .footer__hero::after {
+      top: 50px; } }
