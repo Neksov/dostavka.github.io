@@ -1019,3 +1019,280 @@ input.invalid {
   margin-top: 1.5rem; }
   .load__images-apple {
     margin-left: 1rem; }
+
+@media screen and (min-width: 1600px) and (max-width: 1920px) {
+  .info {
+    margin-left: -5rem; }
+    .info-sliced {
+      left: 21.7rem;
+      bottom: -17rem; }
+    .info-layer {
+      left: 28.3rem;
+      bottom: -6rem; }
+  .sheet {
+    right: 11.4rem; }
+  .egg {
+    right: -5.3rem; }
+  .restaurants__info {
+    padding-right: 4rem; }
+  .place__title {
+    margin-right: 18rem; }
+  .place__line1 {
+    left: 53.1rem; }
+  .place__line2 {
+    left: 53.1rem; }
+  .food1 {
+    right: 1rem; }
+  .thanks__fone-title {
+    margin-right: 7.7rem; }
+  .spice {
+    left: 29rem; }
+  .attachment__info {
+    margin-left: 8rem;
+    margin-right: 8rem; }
+  .attachment__pasta {
+    right: 20rem; }
+  .attachment__pasta2 {
+    right: 17.7rem; }
+  .paragraph__group-social {
+    margin-left: 100px; }
+  .paragraph__group-partner {
+    margin-left: 6rem; }
+  .paragraph__group-menu {
+    margin-left: 4.5rem;
+    margin-top: 7rem; }
+  .paragraph__group-blog {
+    margin-top: 1rem; }
+  .paragraph__group-load {
+    margin-left: 9rem;
+    margin-top: -2.1rem; }
+  .footer__hero {
+    height: 500px; } }
+
+@media screen and (min-width: 1439px) and (max-width: 1599px) {
+  .info {
+    margin-left: -5rem; }
+    .info-sliced {
+      left: 21.7rem;
+      bottom: -14rem;
+      width: 40%; }
+    .info-layer {
+      width: 20%;
+      left: 28.3rem;
+      bottom: -6rem; }
+  .fone-fruit {
+    width: 90%; }
+  .find__hero-burger {
+    width: 35%;
+    margin-left: 7rem; }
+  .sheet {
+    right: 11.4rem; }
+  .restaurants__info {
+    padding-right: 4rem; }
+  .restaurants__title {
+    width: 550px; }
+  .phone {
+    width: 30%; }
+  .egg {
+    right: -3.3rem;
+    width: 25%; }
+  .place__title {
+    margin-right: 13rem; }
+  .place__line1 {
+    left: 53.1rem; }
+  .place__line2 {
+    left: 53.1rem; }
+  .food1 {
+    right: 1rem; }
+  .thanks__fone-title {
+    margin-right: 12.7rem;
+    width: 439px; }
+  .phone2 {
+    width: 30%;
+    margin-right: 4rem; }
+  .spice {
+    left: 19rem;
+    width: 20%; }
+  .line3 {
+    width: 100%;
+    margin-top: 9rem; }
+  .attachment__info {
+    margin-left: 8rem;
+    margin-right: 8rem; }
+  .attachment__pasta {
+    right: 20rem; }
+  .attachment__pasta2 {
+    right: 17.7rem; }
+  .paragraph__group-social {
+    margin-left: 100px; }
+  .paragraph__group-partner {
+    margin-left: 1rem; }
+  .paragraph__group-menu {
+    margin-left: 2rem;
+    margin-top: 7rem; }
+  .paragraph__group-blog {
+    margin-top: 1rem; }
+  .paragraph__group-load {
+    margin-left: 9rem;
+    margin-top: -2.1rem; }
+  .footer__hero {
+    height: 500px; } }
+
+@media screen and (min-width: 1360px) and (max-width: 1438px) {
+  .info {
+    margin-left: -5rem; }
+    .info-sliced {
+      left: 21.7rem;
+      bottom: -14rem;
+      width: 40%; }
+    .info-layer {
+      width: 20%;
+      left: 28.3rem;
+      bottom: -6rem; }
+  .fone-fruit {
+    width: 90%; }
+  .find__hero-burger {
+    width: 35%;
+    margin-left: 7rem; }
+  .sheet {
+    right: 11.4rem; }
+  .restaurants__info {
+    padding-right: 4rem; }
+  .restaurants__title {
+    width: 550px; }
+  .phone {
+    width: 30%; }
+  .egg {
+    right: -3.3rem;
+    width: 25%; }
+  .place__title {
+    margin-right: 13rem; }
+  .place__line1 {
+    left: 53.1rem; }
+  .place__line2 {
+    left: 53.1rem; }
+  .food1 {
+    right: 1rem; }
+  .thanks__fone-title {
+    margin-right: 12.7rem;
+    width: 439px; }
+  .phone2 {
+    width: 30%;
+    margin-right: 4rem; }
+  .spice {
+    left: 19rem;
+    width: 20%; }
+  .line3 {
+    width: 100%;
+    margin-top: 9rem; }
+  .attachment__info {
+    margin-left: 8rem;
+    margin-right: 8rem; }
+  .attachment__pasta {
+    right: 20rem; }
+  .attachment__pasta2 {
+    right: 17.7rem; }
+  .paragraph__group-social {
+    margin-left: 70px; }
+  .paragraph__group-partner {
+    margin-left: 1rem; }
+  .paragraph__group-menu {
+    margin-left: 2rem;
+    margin-top: 7rem; }
+  .paragraph__group-blog {
+    margin-top: 1rem; }
+  .paragraph__group-load {
+    margin-left: 6rem;
+    margin-top: -2.1rem; }
+  .footer__hero {
+    height: 500px; } }
+
+@media screen and (min-width: 1200px) and (max-width: 1359px) {
+  .info {
+    margin-left: -5rem; }
+    .info-sliced {
+      left: 21.7rem;
+      bottom: -14rem;
+      width: 40%; }
+    .info-layer {
+      width: 20%;
+      left: 28.3rem;
+      bottom: -6rem; }
+  .fone-fruit {
+    width: 90%; }
+  .find__hero-burger {
+    width: 35%;
+    margin-left: 7rem;
+    margin-right: 3rem; }
+  .find__hero-title {
+    width: 450px; }
+  input {
+    width: 400px; }
+  .sheet {
+    right: 11.4rem; }
+  .restaurants__info {
+    padding-right: 4rem;
+    padding-left: 3rem; }
+  .restaurants__title {
+    width: 500px; }
+  .phone {
+    width: 30%; }
+  .egg {
+    right: -3.3rem;
+    width: 25%; }
+  .cucumber {
+    width: 70%; }
+  .place__title {
+    margin-right: 13rem; }
+  .place__line1 {
+    left: 53.1rem; }
+  .place__line2 {
+    left: 53.1rem; }
+  .place__food {
+    width: 50%; }
+  .food1 {
+    right: 1rem; }
+  .mushroom {
+    width: 12%;
+    right: 25.7rem;
+    top: 8rem; }
+  .thanks__fone-title {
+    margin-right: 12.7rem;
+    width: 439px; }
+  .phone2 {
+    width: 30%;
+    margin-right: 4rem; }
+  .spice {
+    left: 19rem;
+    width: 20%; }
+  .line3 {
+    width: 100%;
+    margin-top: 9rem; }
+  .attachment__info {
+    margin-left: 2rem;
+    margin-right: 8rem; }
+  .attachment__pasta {
+    right: 20rem; }
+  .attachment__pasta2 {
+    right: 17.7rem; }
+  .attachment__sheet {
+    width: 17%;
+    right: 2rem; }
+  .vegetables {
+    width: 40%;
+    margin-left: 7rem; }
+  .paragraph__group-social {
+    margin-left: 30px; }
+  .paragraph__group-partner {
+    margin-left: 0rem; }
+  .paragraph__group-menu {
+    margin-left: 1rem;
+    margin-top: 7rem; }
+  .paragraph__group-blog {
+    margin-top: 1rem;
+    margin-left: 2rem; }
+  .paragraph__group-load {
+    margin-left: 6rem;
+    margin-top: -2.1rem; }
+  .footer__hero {
+    height: 500px; } }
