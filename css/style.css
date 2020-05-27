@@ -948,7 +948,8 @@ input.invalid {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  margin: 2rem; }
   .paragraph__group-social {
     margin-left: 180px;
     padding-top: 181px; }
@@ -2193,7 +2194,10 @@ input.invalid {
       display: none; }
   .paragraph__group {
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
     .paragraph__group-social {
       padding-top: 0rem;
       margin-left: 30px; }
@@ -2219,83 +2223,105 @@ input.invalid {
     .footer__hero::after {
       top: 50px; } }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 510px) and (max-width: 767px) {
   .info {
-    margin-left: -7rem; }
+    margin-left: -7rem;
+    margin-top: 6rem; }
     .info-sliced {
-      left: 21.7rem;
-      bottom: -13rem;
+      left: 15.7rem;
+      bottom: -10rem;
       width: 30%; }
     .info-layer {
       width: 15%;
-      left: 26.3rem;
-      bottom: -7rem; }
+      left: 19.3rem;
+      bottom: -4rem; }
     .info__title {
       font-size: 30px;
       width: 300px;
       line-height: 50px; }
+    .info-btn {
+      top: 12.5rem;
+      left: 0; }
   .fone-fruit {
-    width: 90%; }
+    width: 130%; }
   .fone-btn {
-    margin-right: -5rem; }
-  .find__hero-burger {
-    width: 35%;
-    margin-left: 7rem;
-    margin-right: 3rem; }
-  .find__hero-title {
-    width: 350px;
-    font-size: 30px;
-    line-height: 50px; }
-  .find__hero-btn {
-    padding: 1rem 2.3rem;
-    margin-top: 10px; }
+    margin-right: -9rem; }
+  .find__hero {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .find__hero-burger {
+      width: 60%;
+      margin: auto;
+      margin-top: -11rem; }
+    .find__hero-info {
+      margin-top: 0;
+      margin-left: 9rem; }
+    .find__hero-title {
+      width: 350px;
+      font-size: 30px;
+      line-height: 50px; }
+    .find__hero-btn {
+      padding: 1.3rem 2.3rem;
+      margin-top: 10px; }
   input {
     width: 298px; }
   .sheet {
-    right: 11.4rem;
-    top: -10.5rem; }
+    right: -3.6rem;
+    top: -15.5rem; }
   .search__group {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    z-index: 30; }
+    z-index: 30;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end; }
   .restaurants__hero {
     height: 900px;
-    z-index: -1; }
+    z-index: -1;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
   .restaurants-btn {
     padding: 1rem 2.3rem; }
   .restaurants__info {
-    padding-right: 2rem;
-    padding-left: 9rem; }
+    padding-left: 31rem;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    margin-top: -17rem; }
   .restaurants__title {
     width: 350px;
     font-size: 30px;
     line-height: 50px; }
   .cucumber {
-    left: -3.6rem; }
+    left: -3.6rem;
+    top: 16rem;
+    width: 73%; }
   .phone {
-    width: 30%; }
+    max-width: 200px;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+    margin-left: 18rem; }
   .egg {
-    right: 3.7rem;
-    width: 22%;
+    right: -3.3rem;
+    width: 30%;
     top: 5.4rem; }
-  .cucumber {
-    width: 63%; }
   .line1 {
-    left: 16.1rem;
-    top: 14.5rem; }
+    left: 21.1rem;
+    top: 46.5rem; }
   .line2 {
-    left: 16.1rem;
-    top: 15.5rem; }
+    left: 21.1rem;
+    top: 47.5rem; }
   .place__title {
     margin-right: 3rem;
     width: 350px;
     font-size: 30px;
     line-height: 50px; }
   .place__line1 {
-    left: 30rem; }
+    left: 27rem;
+    bottom: 11rem; }
   .place__line2 {
-    left: 30rem;
-    bottom: 17.5rem; }
+    left: 27rem;
+    bottom: 12rem; }
   .place__food {
     width: 50%;
     margin-top: 9rem; }
@@ -2304,73 +2330,84 @@ input.invalid {
     width: 14%; }
   .mushroom {
     width: 10%;
-    right: 14rem;
-    top: 8rem; }
+    right: 20rem;
+    top: 4rem; }
   .thanks__fone {
     height: 800px;
-    z-index: -1; }
+    z-index: -1;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
     .thanks__fone-title {
       margin-right: 1rem;
       width: 300px;
       font-size: 30px;
-      line-height: 50px; }
+      line-height: 50px;
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1;
+      margin-top: -6rem; }
   .phone2 {
     width: 25%;
-    margin-right: 4rem; }
+    margin-right: 4rem;
+    margin-top: -8.5rem; }
   .sandwich {
     width: 17%;
-    left: 11rem;
-    top: 30rem; }
+    left: 0.7rem;
+    top: 35.5rem; }
   .sandwich2 {
     width: 17%;
-    left: 11.7rem;
-    top: 30.5rem; }
+    left: 1rem;
+    top: 35.5rem; }
   .dumplings {
     width: 15%;
-    top: 33.3rem;
+    top: 35.3rem;
     left: 20.6rem; }
   .dumplings2 {
     width: 15%;
-    top: 33.3rem;
+    top: 35.3rem;
     left: 20.6rem; }
   .spice {
-    left: 17rem;
-    top: 7rem;
+    left: 14rem;
+    top: 9rem;
     width: 20%; }
   .line3 {
     width: 100%;
-    margin-top: -6rem; }
+    margin-top: 1rem; }
   .story {
     margin-top: 0; }
-  .attachment__info {
-    margin-left: 2rem;
-    margin-right: 8rem;
-    margin-top: -4rem; }
-    .attachment__info-text {
-      width: 400px; }
-  .attachment__pasta {
-    right: 20rem;
-    bottom: -4rem;
-    z-index: 31; }
-  .attachment__pasta2 {
-    right: 17.7rem;
-    bottom: -6.4rem;
-    z-index: 30; }
-  .attachment__sheet {
-    width: 17%;
-    right: 2rem; }
-  .attachment__line2 {
-    top: -3rem;
-    left: 28rem; }
-  .attachment__line1 {
-    top: -4rem;
-    left: 28rem; }
-  .attachment__grass {
-    bottom: -3.3rem;
-    z-index: 1; }
+  .attachment {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .attachment__info {
+      margin-left: 2rem;
+      margin-right: 5rem;
+      margin-top: -4rem; }
+      .attachment__info-text {
+        width: 400px; }
+    .attachment__pasta {
+      right: 20rem;
+      bottom: -8rem;
+      z-index: 31; }
+    .attachment__pasta2 {
+      right: 17.7rem;
+      bottom: -10.4rem;
+      z-index: 30; }
+    .attachment__sheet {
+      width: 17%;
+      right: 2rem; }
+    .attachment__line2 {
+      top: -3rem;
+      left: 23rem; }
+    .attachment__line1 {
+      top: -4rem;
+      left: 23rem; }
+    .attachment__grass {
+      bottom: -3.3rem;
+      z-index: 1; }
   .vegetables {
-    width: 40%;
-    margin-left: 7rem; }
+    width: 60%;
+    margin-top: -7rem;
+    margin-bottom: 3rem; }
   .uber {
     width: 20%; }
   .story__google {
@@ -2387,28 +2424,281 @@ input.invalid {
       display: none; }
   .paragraph__group {
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 2rem; }
     .paragraph__group-social {
       padding-top: 0rem;
-      margin-left: 30px; }
+      margin-left: 0rem; }
     .paragraph__group-partner {
       margin-left: 2rem;
       margin-top: -1rem; }
     .paragraph__group-menu {
-      margin-left: 2rem;
+      margin-left: 0rem;
       margin-top: 5.5rem; }
     .paragraph__group-blog {
-      margin-top: -1rem;
-      margin-left: -10px; }
+      margin-top: 4rem;
+      margin-left: -8px; }
     .paragraph__group-load {
-      margin-left: 4rem;
-      margin-top: -3rem; }
+      margin-left: 0rem;
+      margin-top: 2rem; }
   .production {
     margin-top: 1rem; }
   .footer__hero {
-    height: 600px;
+    height: 850px;
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: end; }
     .footer__hero::after {
       top: 50px; } }
+
+@media screen and (min-width: 320px) and (max-width: 509px) {
+  .info {
+    margin-left: -10rem;
+    margin-top: 3rem; }
+    .info-sliced {
+      left: 11.7rem;
+      bottom: -13rem;
+      width: 30%; }
+    .info-layer {
+      width: 15%;
+      left: 15.3rem;
+      bottom: -9rem; }
+    .info__title {
+      font-size: 27px;
+      width: 300px;
+      line-height: 40px; }
+    .info-btn {
+      top: 12.5rem;
+      left: 0; }
+  .fone-fruit {
+    width: 180%; }
+  .fone-btn {
+    margin-right: -9rem; }
+  .find__hero {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .find__hero-burger {
+      width: 60%;
+      margin: auto;
+      margin-top: -11rem;
+      margin-left: 8rem; }
+    .find__hero-info {
+      margin-top: 0;
+      margin-left: 4.5rem; }
+    .find__hero-title {
+      width: 350px;
+      font-size: 27px;
+      line-height: 40px; }
+    .find__hero-btn {
+      padding: 1.3rem 2.3rem;
+      margin-top: 10px; }
+  input {
+    width: 298px; }
+  .sheet {
+    right: 1.4rem;
+    width: 40%;
+    top: -15.5rem; }
+  .search__group {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    z-index: 30;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end; }
+  .restaurants__hero {
+    height: 900px;
+    z-index: -1;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .restaurants-btn {
+    padding: 1rem 2.3rem; }
+  .restaurants__info {
+    padding-left: 31rem;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    margin-top: -17rem; }
+  .restaurants__title {
+    width: 300px;
+    font-size: 27px;
+    line-height: 40px; }
+  .cucumber {
+    left: -3.6rem;
+    top: 15rem;
+    width: 73%; }
+  .phone {
+    max-width: 200px;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+    margin-left: 18rem; }
+  .egg {
+    right: -3.3rem;
+    width: 30%;
+    top: 5.4rem; }
+  .line1 {
+    left: 21.1rem;
+    top: 46.5rem; }
+  .line2 {
+    left: 21.1rem;
+    top: 47.5rem; }
+  .place__title {
+    margin-right: 3rem;
+    width: 300px;
+    font-size: 27px;
+    line-height: 40px; }
+  .place__line1 {
+    left: 27rem;
+    bottom: 11rem; }
+  .place__line2 {
+    left: 27rem;
+    bottom: 12rem; }
+  .place__food {
+    width: 50%;
+    margin-top: 9rem; }
+  .food1 {
+    right: 1rem;
+    width: 14%;
+    top: 19rem; }
+  .mushroom {
+    width: 10%;
+    right: 2rem;
+    top: 4rem; }
+  .thanks__fone {
+    height: 800px;
+    z-index: -1;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .thanks__fone-title {
+      margin-right: 1rem;
+      width: 270px;
+      font-size: 27px;
+      line-height: 40px;
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1;
+      margin-top: -6rem; }
+  .phone2 {
+    max-width: 150px;
+    margin-right: -1rem;
+    margin-top: 11.5rem; }
+  .sandwich {
+    width: 17%;
+    left: 0.7rem;
+    top: 32.5rem; }
+  .sandwich2 {
+    width: 17%;
+    left: 1rem;
+    top: 32.5rem; }
+  .dumplings {
+    width: 15%;
+    top: 35.3rem;
+    left: 20.6rem; }
+  .dumplings2 {
+    width: 15%;
+    top: 35.3rem;
+    left: 20.6rem; }
+  .spice {
+    left: 9rem;
+    top: 9rem;
+    width: 20%; }
+  .line3 {
+    width: 100%;
+    margin-top: 1rem; }
+  .story {
+    margin-top: 0; }
+  .attachment {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .attachment__info {
+      margin-left: 5rem;
+      margin-right: 5rem;
+      margin-top: -4rem; }
+      .attachment__info-text {
+        font-size: 27px;
+        width: 290px;
+        line-height: 40px; }
+    .attachment__pasta {
+      right: 11rem;
+      bottom: -8rem;
+      z-index: 31; }
+    .attachment__pasta2 {
+      right: 8.7rem;
+      bottom: -10.4rem;
+      z-index: 30; }
+    .attachment__sheet {
+      width: 17%;
+      right: 2rem; }
+    .attachment__line2 {
+      top: -3rem;
+      left: 23rem; }
+    .attachment__line1 {
+      top: -4rem;
+      left: 23rem; }
+    .attachment__grass {
+      bottom: -9.3rem;
+      z-index: 1; }
+  .vegetables {
+    width: 60%;
+    margin-top: -7rem;
+    margin-bottom: 3rem; }
+  .uber {
+    width: 20%; }
+  .story__google {
+    width: 100%; }
+  .story__apple {
+    width: 100%; }
+  .service__hero {
+    height: 1100px; }
+  .information__eat {
+    margin-top: 1.5rem;
+    width: 240px; }
+    .information__eat-text {
+      width: 270px; }
+  .information__restaurant {
+    margin-right: 2rem;
+    width: 240px; }
+    .information__restaurant::after {
+      display: none; }
+    .information__restaurant-text {
+      width: 270px; }
+  .paragraph__group {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 2rem; }
+    .paragraph__group-social {
+      padding-top: 5rem;
+      margin-left: 0rem; }
+    .paragraph__group-partner {
+      margin-left: -0.5rem;
+      margin-top: -1rem; }
+    .paragraph__group-menu {
+      margin-left: -1rem;
+      margin-top: 1rem; }
+    .paragraph__group-blog {
+      margin-top: -5rem;
+      margin-left: -8px; }
+    .paragraph__group-load {
+      margin-left: 0rem;
+      margin-top: 2rem; }
+  .production {
+    margin-top: 1rem; }
+  .footer__hero {
+    height: 1010px;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: end; }
+    .footer__hero::after {
+      top: 50px; } }
+
+@media only screen and (max-width: 991px) {
+  .animated {
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    -webkit-animation: none !important;
+    animation: none !important; } }

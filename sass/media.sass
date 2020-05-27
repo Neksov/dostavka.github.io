@@ -841,6 +841,7 @@
   .paragraph
     &__group
       flex-wrap: wrap
+      justify-content: center
       &-social 
         padding-top: 0rem
         margin-left: 30px
@@ -864,77 +865,91 @@
       align-items: end
       &::after
         top: 50px
-@media  screen and (min-width : 480px) and (max-width : 767px)
+@media  screen and (min-width : 510px) and (max-width : 767px)
   .info
     margin-left: -7rem
+    margin-top: 6rem
     &-sliced 
-      left: 21.7rem
-      bottom: -13rem
+      left: 15.7rem
+      bottom: -10rem
       width: 30%
     &-layer 
       width: 15%
-      left: 26.3rem
-      bottom: -7rem
+      left: 19.3rem
+      bottom: -4rem
     &__title 
       font-size: 30px
       width: 300px
       line-height: 50px
+    &-btn 
+      top: 12.5rem
+      left: 0
   .fone
     &-fruit
-      width: 90%
+      width: 130%
     &-btn 
-      margin-right: -5rem
+      margin-right: -9rem
   .find
     &__hero
+      flex-wrap: wrap
       &-burger
-        width: 35%
-        margin-left: 7rem
-        margin-right: 3rem
+        width: 60%
+        margin: auto
+        margin-top: -11rem
+      &-info
+        margin-top: 0
+        margin-left: 9rem
       &-title
         width: 350px
         font-size: 30px
         line-height: 50px
       &-btn 
-        padding: 1rem 2.3rem
+        padding: 1.3rem 2.3rem
         margin-top: 10px
   input
     width: 298px
   .sheet 
-    right: 11.4rem
-    top: -10.5rem
+    right: -3.6rem
+    top: -15.5rem
   .search
     &__group
       flex-wrap: wrap
       z-index: 30
+      align-items: flex-end
   .restaurants
     &__hero
       height: 900px
       z-index: -1
+      flex-wrap: wrap
     &-btn
       padding: 1rem 2.3rem
     &__info 
-      padding-right: 2rem
-      padding-left: 9rem
+      padding-left: 31rem
+      order: 1
+      margin-top: -17rem
     &__title
       width: 350px
       font-size: 30px
       line-height: 50px
   .cucumber 
     left: -3.6rem
+    top: 16rem
+    width: 73%
   .phone
-    width: 30%
+    max-width: 200px
+    margin-top: 3rem
+    margin-bottom: 6rem
+    margin-left: 18rem
   .egg 
-    right: 3.7rem
-    width: 22%
+    right: -3.3rem
+    width: 30%
     top: 5.4rem
-  .cucumber
-    width: 63%
   .line1
-    left: 16.1rem
-    top: 14.5rem
+    left: 21.1rem
+    top: 46.5rem
   .line2
-    left: 16.1rem
-    top: 15.5rem
+    left: 21.1rem
+    top: 47.5rem
   .place
     &__title
       margin-right: 3rem
@@ -942,10 +957,12 @@
       font-size: 30px
       line-height: 50px
     &__line1 
-      left: 30rem
+      left: 27rem
+      bottom: 11rem
     &__line2
-      left: 30rem
-      bottom: 17.5rem
+      left: 27rem
+      bottom: 12rem
+
     &__food
       width: 50%
       margin-top: 9rem
@@ -954,75 +971,81 @@
     width: 14%
   .mushroom 
     width: 10%
-    right: 14rem
-    top: 8rem
+    right: 20rem
+    top: 4rem
   .thanks
     &__fone
       height: 800px
       z-index: -1
+      flex-wrap: wrap
       &-title 
         margin-right: 1rem
         width: 300px
         font-size: 30px
         line-height: 50px
+        order: 1
+        margin-top: -6rem
   .phone2
     width: 25%
     margin-right: 4rem
+    margin-top: -8.5rem
   .sandwich
     width: 17%
-    left: 11rem
-    top: 30rem
+    left: 0.7rem
+    top: 35.5rem
   .sandwich2
     width: 17%
-    left: 11.7rem
-    top: 30.5rem
+    left: 1rem
+    top: 35.5rem
   .dumplings
     width: 15%
-    top: 33.3rem
+    top: 35.3rem
     left: 20.6rem
   .dumplings2
     width: 15%
-    top: 33.3rem
+    top: 35.3rem
     left: 20.6rem
   .spice 
-    left: 17rem    
-    top: 7rem  
+    left: 14rem    
+    top: 9rem  
     width: 20%
   .line3
     width: 100%
-    margin-top: -6rem
+    margin-top: 1rem
   .story
     margin-top: 0
   .attachment
+    flex-wrap: wrap
     &__info
       margin-left: 2rem
-      margin-right: 8rem
+      margin-right: 5rem
       margin-top: -4rem
       &-text
         width: 400px
     &__pasta 
       right: 20rem
-      bottom: -4rem
+      bottom: -8rem
       z-index: 31
     &__pasta2
       right: 17.7rem
-      bottom: -6.4rem
+      bottom: -10.4rem
       z-index: 30
     &__sheet
       width: 17%
       right: 2rem
     &__line2 
       top: -3rem
-      left: 28rem
+      left: 23rem
     &__line1
       top: -4rem
-      left: 28rem
+      left: 23rem
     &__grass 
       bottom: -3.3rem
       z-index: 1
   .vegetables
-    width: 40%
-    margin-left: 7rem
+    width: 60%
+    margin-top: -7rem
+    margin-bottom: 3rem
   .uber
     width: 20%
   .story
@@ -1043,26 +1066,281 @@
   .paragraph
     &__group
       flex-wrap: wrap
+      justify-content: space-around
+      margin: 2rem
       &-social 
         padding-top: 0rem
-        margin-left: 30px
+        margin-left: 0rem
       &-partner 
         margin-left: 2rem
         margin-top: -1rem
       &-menu 
-        margin-left: 2rem
+        margin-left: 0rem
         margin-top: 5.5rem
       &-blog
-        margin-top: -1rem
-        margin-left: -10px
+        margin-top: 4rem
+        margin-left: -8px
       &-load 
-        margin-left: 4rem
-        margin-top: -3rem
+        margin-left: 0rem
+        margin-top: 2rem
   .production 
     margin-top: 1rem
   .footer
     &__hero 
-      height: 600px
+      height: 850px
       align-items: end
       &::after
         top: 50px
+@media  screen and (min-width : 320px) and (max-width : 509px)
+  .info
+    margin-left: -10rem
+    margin-top: 3rem
+    &-sliced 
+      left: 11.7rem
+      bottom: -13rem
+      width: 30%
+    &-layer 
+      width: 15%
+      left: 15.3rem
+      bottom: -9rem
+    &__title 
+      font-size: 27px
+      width: 300px
+      line-height: 40px
+    &-btn 
+      top: 12.5rem
+      left: 0
+  .fone
+    &-fruit
+      width: 180%
+    &-btn 
+      margin-right: -9rem
+  .find
+    &__hero
+      flex-wrap: wrap
+      &-burger
+        width: 60%
+        margin: auto
+        margin-top: -11rem
+        margin-left: 8rem
+      &-info
+        margin-top: 0
+        margin-left: 4.5rem
+      &-title
+        width: 350px
+        font-size: 27px
+        line-height: 40px
+      &-btn 
+        padding: 1.3rem 2.3rem
+        margin-top: 10px
+  input
+    width: 298px
+  .sheet 
+    right: 1.4rem
+    width: 40%
+    top: -15.5rem
+  .search
+    &__group
+      flex-wrap: wrap
+      z-index: 30
+      align-items: flex-end
+  .restaurants
+    &__hero
+      height: 900px
+      z-index: -1
+      flex-wrap: wrap
+    &-btn
+      padding: 1rem 2.3rem
+    &__info 
+      padding-left: 31rem
+      order: 1
+      margin-top: -17rem
+    &__title
+      width: 300px
+      font-size: 27px
+      line-height: 40px
+  .cucumber 
+    left: -3.6rem
+    top: 15rem
+    width: 73%
+  .phone
+    max-width: 200px
+    margin-top: 3rem
+    margin-bottom: 6rem
+    margin-left: 18rem
+  .egg 
+    right: -3.3rem
+    width: 30%
+    top: 5.4rem
+  .line1
+    left: 21.1rem
+    top: 46.5rem
+  .line2
+    left: 21.1rem
+    top: 47.5rem
+  .place
+    &__title
+      margin-right: 3rem
+      width: 300px
+      font-size: 27px
+      line-height: 40px
+    &__line1 
+      left: 27rem
+      bottom: 11rem
+    &__line2
+      left: 27rem
+      bottom: 12rem
+    &__food
+      width: 50%
+      margin-top: 9rem
+  .food1 
+    right: 1rem
+    width: 14%
+    top: 19rem
+  .mushroom 
+    width: 10%
+    right: 2rem
+    top: 4rem
+  .thanks
+    &__fone
+      height: 800px
+      z-index: -1
+      flex-wrap: wrap
+      &-title 
+        margin-right: 1rem
+        width: 270px
+        font-size: 27px
+        line-height: 40px
+        order: 1
+        margin-top: -6rem
+  .phone2
+    max-width: 150px
+    margin-right: -1rem
+    margin-top: 11.5rem
+  .sandwich
+    width: 17%
+    left: 0.7rem
+    top: 32.5rem
+  .sandwich2
+    width: 17%
+    left: 1rem
+    top: 32.5rem
+  .dumplings
+    width: 15%
+    top: 35.3rem
+    left: 20.6rem
+  .dumplings2
+    width: 15%
+    top: 35.3rem
+    left: 20.6rem
+  .spice 
+    left: 9rem    
+    top: 9rem  
+    width: 20%
+  .line3
+    width: 100%
+    margin-top: 1rem
+  .story
+    margin-top: 0
+  .attachment
+    flex-wrap: wrap
+    &__info
+      margin-left: 5rem
+      margin-right: 5rem
+      margin-top: -4rem
+      &-text 
+        font-size: 27px
+        width: 290px
+        line-height: 40px
+    &__pasta 
+      right: 11rem
+      bottom: -8rem
+      z-index: 31
+    &__pasta2
+      right: 8.7rem
+      bottom: -10.4rem
+      z-index: 30
+    &__sheet
+      width: 17%
+      right: 2rem
+    &__line2 
+      top: -3rem
+      left: 23rem
+    &__line1
+      top: -4rem
+      left: 23rem
+    &__grass 
+      bottom: -9.3rem
+      z-index: 1
+  .vegetables
+    width: 60%
+    margin-top: -7rem
+    margin-bottom: 3rem
+  .uber
+    width: 20%
+  .story
+    &__google
+      width: 100%
+    &__apple
+      width: 100%
+  .service
+    &__hero
+      height: 1100px
+  .information
+    &__eat
+      margin-top: 1.5rem
+      width: 240px
+      &-text
+        width: 270px
+    &__restaurant
+      margin-right: 2rem
+      width: 240px
+      &::after
+        display: none
+      &-text
+        width: 270px
+  .paragraph
+    &__group
+      flex-wrap: wrap
+      justify-content: space-around
+      margin: 2rem
+      &-social 
+        padding-top: 5rem
+        margin-left: 0rem
+      &-partner 
+        margin-left: -0.5rem
+        margin-top: -1rem
+      &-menu 
+        margin-left: -1rem
+        margin-top: 1rem
+      &-blog
+        margin-top: -5rem
+        margin-left: -8px
+      &-load 
+        margin-left: 0rem
+        margin-top: 2rem
+  .production 
+    margin-top: 1rem
+  .footer
+    &__hero 
+      height: 1010px
+      align-items: end
+      &::after
+        top: 50px
+@media only screen and (max-width : 991px) 
+  .animated 
+    -o-transition-property: none !important
+    -moz-transition-property: none !important
+    -ms-transition-property: none !important
+    -webkit-transition-property: none !important
+    transition-property: none !important
+    -o-transform: none !important
+    -moz-transform: none !important
+    -ms-transform: none !important
+    -webkit-transform: none !important
+    transform: none !important
+    -webkit-animation: none !important
+    -moz-animation: none !important
+    -o-animation: none !important
+    -ms-animation: none !important
+    animation: none !important
